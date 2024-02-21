@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Revolution&display=swap"
+    rel="stylesheet">
+<style>
+    #nav, #landon{
+        font-family: "Protest Revolution", sans-serif;
+    }
+</style>
     <script>
         tailwind.config = {
             theme: {
@@ -31,18 +38,19 @@
             },
         };
     </script>
+
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="bg-gray-800 pb-10">
+    <nav class="bg-gray-800 pb-10" id="nav">
         <div class="flex">
             <div class="flex flex-col gap-5 ml-4 cursor-pointer text-white">
                 logo
                 <box-icon name="menu" class="lg:hidden" id="menu"></box-icon>
             </div>
             <!-- Desktop view -->
-            <div class="hidden lg:flex ml-96 mt-5 gap-8 text-lg font-semibold">
+            <div class="hidden lg:flex ml-96 mt-5 gap-8 text-lg " id="divu">
                 <a href="#" class="mt-6 text-purple-500">Home</a>
                 <a href="#" class="mt-6 text-white hover:text-purple-500 duration-500">About us</a>
                 <a href="#" class="mt-6 text-white hover:text-purple-500 duration-500">FAQ</a>
@@ -74,7 +82,7 @@
     <!-- landon -->
 
     <!-- Deskop -->
-    <section>
+    <section  id="landon">
         <div class="bg-gray-800 h-13 w-full p-5 gap-5 lg:flex">
             <div class="h-12 w-1/2 text-purple-400 pb-60 animate-pulse pl-16">
                 <h3 class="text-8xl ml-8 mt-">
@@ -85,7 +93,7 @@
                     </p>
                     <a href="signup.html">
                         <button
-                            class="text-base ml-24 mb-10 bg-purple-700 text-white w-32 h-10 rounded-2xl pb-1 hover:bg-purple-950 hover:text-gray-400 duration-500 font-semibold">
+                            class="text-base ml-24 mb-10 bg-purple-700 text-white w-32 h-10 rounded-2xl pb-1 hover:bg-purple-950 hover:text-gray-400 duration-500">
                             Get started
                         </button></a>
                 </h3>
